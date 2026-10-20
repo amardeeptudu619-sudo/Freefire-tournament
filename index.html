@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b16">
+  <title>YouFF Tournament | Battle Arena</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="arenaCanvas" aria-hidden="true"></canvas>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="navbar">
+    <a class="logo" href="#home">YOU<span>FF</span><small> BATTLE ARENA</small></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open navigation">☰</button>
+    <nav id="navMenu">
+      <a href="#home">Home</a>
+      <a href="#tournaments">Tournaments</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <div class="status"><span></span> THE ARENA IS YOURS</div>
+        <p class="eyebrow">A NEW ERA OF COMPETITION</p>
+        <h1>DROP IN.<br>FIGHT HARD.<br><span>RISE ABOVE.</span></h1>
+        <p class="hero-text">
+          Discover community tournaments, find your squad and
+          bring your best game to the YouFF battle arena.
+        </p>
+        <div class="hero-actions">
+          <a href="#tournaments" class="btn btn-primary">Explore Battles <span>↗</span></a>
+          <a href="#about" class="btn btn-outline">Discover YouFF</a>
+        </div>
+        <div class="hero-bottom">
+          <div><strong>01</strong><span>Find your match</span></div>
+          <div><strong>02</strong><span>Build your squad</span></div>
+          <div><strong>03</strong><span>Make your mark</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="hero-image-frame">
+          <img src="youff-hero-art.jpg" alt="YouFF gaming arena artwork">
+          <div class="image-shade"></div>
+          <div class="hero-image-label">
+            <span>YOUFF / COMBAT ZONE</span>
+            <strong>ENTER THE ARENA</strong>
+          </div>
+        </div>
+        <div class="floating-chip chip-top">⚡ GAME ON</div>
+        <div class="floating-chip chip-bottom">NEXT LEVEL GAMING</div>
+      </div>
+    </section>
+
+    <section class="section" id="tournaments">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">CHOOSE YOUR CHALLENGE</p>
+          <h2>THE BATTLE <span>BOARD</span></h2>
+        </div>
+        <p>Find an event, connect with players and get ready to compete.</p>
+      </div>
+
+      <div class="filters">
+        <button class="filter active" data-filter="all">All Battles</button>
+        <button class="filter" data-filter="squad">Squad</button>
+        <button class="filter" data-filter="solo">Solo</button>
+        <button class="filter" data-filter="weekend">Weekend</button>
+      </div>
+
+      <div class="tournament-grid">
+        <article class="tournament-card" data-type="squad">
+          <div class="card-image">
+            <img src="youff-squad-showdown.jpg" alt="Squad Showdown gaming artwork" loading="lazy">
+            <span class="tag">TEAM MODE</span>
+          </div>
+          <div class="card-body">
+            <p class="card-kicker">01 / SQUAD BATTLE</p>
+            <h3>Squad Showdown</h3>
+            <p>Bring your teammates together and take on the challenge.</p>
+            <div class="card-meta"><span>◈ Team match</span><span>◈ Free Fire</span></div>
+            <button class="btn btn-primary register-btn" data-event="Squad Showdown">Ask to Join ↗</button>
+          </div>
+        </article>
+
+        <article class="tournament-card" data-type="solo">
+          <div class="card-image">
+            <img src="youff-solo-survival.jpg" alt="Solo Survival gaming artwork" loading="lazy">
+            <span class="tag">SOLO MODE</span>
+          </div>
+          <div class="card-body">
+            <p class="card-kicker">02 / SOLO BATTLE</p>
+            <h3>Solo Survival</h3>
+            <p>Step into the challenge and test your individual skills.</p>
+            <div class="card-meta"><span>◈ Solo match</span><span>◈ Free Fire</span></div>
+            <button class="btn btn-primary register-btn" data-event="Solo Survival">Ask to Join ↗</button>
+          </div>
+        </article>
+
+        <article class="tournament-card" data-type="weekend">
+          <div class="card-image">
+            <img src="youff-weekend-battle.jpg" alt="Weekend Battle gaming artwork" loading="lazy">
+            <span class="tag">COMMUNITY</span>
+          </div>
+          <div class="card-body">
+            <p class="card-kicker">03 / WEEKEND EVENT</p>
+            <h3>Weekend Battle</h3>
+            <p>Meet fellow players and enjoy a community match.</p>
+            <div class="card-meta"><span>◈ Community</span><span>◈ Free Fire</span></div>
+            <button class="btn btn-primary register-btn" data-event="Weekend Battle">Ask to Join ↗</button>
+          </div>
+        </article>
+      </div>
+      <p class="empty-message" id="emptyMessage" hidden>No battles in this category yet.</p>
+      <p class="demo-note">These are sample event listings. Confirm dates, rules and entry details with the organiser.</p>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="about-visual">
+        <img src="youff-squad-showdown.jpg" alt="YouFF squad gaming artwork" loading="lazy">
+        <div class="about-stamp">PLAY<br>TOGETHER</div>
+      </div>
+      <div class="about-copy">
+        <p class="eyebrow">WELCOME TO YOUFF</p>
+        <h2>NOT JUST A GAME.<br><span>A WHOLE ARENA.</span></h2>
+        <p>
+          YouFF is a community tournament website concept for players
+          who want to discover events, connect with teammates and
+          follow gaming announcements.
+        </p>
+        <div class="feature"><span>✦</span><div><strong>Community events</strong><small>Discover upcoming matches and challenges.</small></div></div>
+        <div class="feature"><span>✦</span><div><strong>Squad and solo modes</strong><small>Find a format that suits your play style.</small></div></div>
+        <div class="feature"><span>✦</span><div><strong>Updates in one place</strong><small>Follow announcements from the organiser.</small></div></div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-glow"></div>
+      <p class="eyebrow">YOUR NEXT MATCH AWAITS</p>
+      <h2>READY TO <span>ENTER?</span></h2>
+      <p>Contact the organiser to ask about upcoming community events.</p>
+      <a class="btn btn-primary" target="_blank" rel="noopener noreferrer"
+         href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=vivekfromindia18@gmail.com&amp;su=YouFF%20Tournament%20Enquiry">
+        Contact Organiser ↗
+      </a>
+      <small>Replace the demo contact email with your preferred organiser email if needed.</small>
+    </section>
+  </main>
+
+  <footer>
+    <a class="logo" href="#home">YOU<span>FF</span></a>
+    <p>Built for the gaming community.</p>
+    <p>© <span id="year"></span> YouFF Tournament</p>
+    <small>Independent community project. Not an official Garena website.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+  </html>
+        
